@@ -1,0 +1,28 @@
+{
+    "baseDir":"/home/steeeeps/from/",
+    "targetDir":"../to",
+    "layers": [
+        {
+            "name": "a.js",
+            "compress":true,
+            "depends": [
+                {
+                    "name": "applications.js",
+                    "depends": [
+                        {
+                            "name": "header.js",
+                            "depends": []
+                        },{
+                            "name":"http://code.jquery.com/jquery-1.8.3.min.js",
+                            "depends":[]
+                        }
+                    ]
+                },{
+                    "name":"portal/message.js",
+                    "depends":[]
+                }
+            ]
+        }
+        
+    ]
+}
