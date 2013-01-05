@@ -1,6 +1,7 @@
+
 {
-    "baseDir":"/home/steeeeps/from/",
-    "targetDir":"../to",
+    "baseDir":"H:\\cbtest\\from",
+    "targetDir":"H:\\cbtest\\to",
     "layers": [
         {
             "name": "a.js",
@@ -10,10 +11,31 @@
                     "name": "applications.js",
                     "depends": [
                         {
-                            "name": "header.js",
+                            "name": "effects.js",
                             "depends": []
                         },{
-                            "name":"http://code.jquery.com/jquery-1.8.3.min.js",
+                            "name":"mgr\\util.js",
+                            "depends":[]
+                        }
+                    ]
+                },{
+                    "name":"portal/message.js",
+                    "depends":[]
+                }
+            ]
+        },
+        {
+            "name": "b.js",
+            "compress":false,
+            "depends": [
+                {
+                    "name": "applications.js",
+                    "depends": [
+                        {
+                            "name": "effects.js",
+                            "depends": []
+                        },{
+                            "name":"mgr/util.js",
                             "depends":[]
                         }
                     ]

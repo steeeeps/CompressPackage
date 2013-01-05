@@ -21,8 +21,10 @@ function yuicompressor(originFile, targetFile, type) {
         //Compressor Options:
         charset : 'utf8',
         type : type,
-        nomunge : true,
-        'line-break' : 80
+        //是否混淆变量
+        //nomunge : true,
+        //是否换行
+        'line-break' : 8000
     }, function(err, data, extra) {
         //err   If compressor encounters an error, it's stderr will be here
         //data  The compressed string, you write it out where you want it
